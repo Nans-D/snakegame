@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.square-game-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-detail {
+  display: flex;
+  background-color: aqua;
+  width: 500px;
+  justify-content: space-evenly;
+}
+
+.square-game {
+  display: grid;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  width: 500px;
+  height: 500px;
+  background-color: darkblue;
+  position: relative;
+}
+
+.snake {
+  background-color: aquamarine;
+  border-radius: 50%;
+}
+
+.apple {
+  background-color: red;
+}
